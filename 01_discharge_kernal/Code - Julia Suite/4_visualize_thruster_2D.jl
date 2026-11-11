@@ -65,15 +65,11 @@ println("Zone boundaries (auto-derived from geometry):")
 # ── PLUME DIVERGENCE ANGLE — voltage utilisation method (Option 3) ────────────
 #
 # Physical basis:
-#   The beam divergence half-angle is set by the fraction of electron thermal
-#   energy (Te_exit) at the exit plane that was NOT converted to directed axial
-#   ion kinetic energy. Energy conservation gives:
+#   The beam divergence half-angle is set by the fraction of electron thermal energy (Te_exit) at the exit plane that was NOT converted to directed axial ion kinetic energy. Energy conservation gives:
 #
 #       α = arccos( sqrt(1 - Te_exit / Vd) )
 #
-#   This is geometry-independent and auto-scales with any operating point —
-#   it uses only simulation outputs Te and Vd, so it works unchanged for any
-#   channel size or discharge voltage you simulate.
+#   This is geometry-independent and auto-scales with any operating point — it uses only simulation outputs Te and Vd, so it works unchanged for any channel size or discharge voltage you simulate.
 #
 #   IMPORTANT: This gives the IDEAL axial beam divergence only.
 #   Experimental measurements will be larger (~2–3×) due to:
