@@ -12,16 +12,17 @@ Produces exit-plane plasma and neutral conditions that feed into the near-field 
 
 ## Folder Structure
 
+_NOTE: Serial numbers next to the codes and documentation indicate the sequence of simulation._
 ```
 01_discharge_kernal/
 ├── Code - Julia Suite/
-│   ├── 1_Code_Julia_Suite_README.md       ← usage and run order
-│   ├── My_HET.jl                          ← core simulation script
-│   └── 2D axisymmetric cross section.jl   ← data extraction for visualiser
+│   ├── 1_Code_Julia_Suite_README.md         ← usage and run order
+│   ├── 2_My_HET.jl                          ← core simulation script
+│   └── 3_2D axisymmetric cross section.jl   ← data extraction for visualiser
 └── Code documentation/
-    ├── 1 Discharge Kernel README.md       ← this file
-    ├── myHET_7mN.md                       ← My_HET.jl walkthrough
-    └── 2D_axisymmetric_cross_section.md   ← extraction script walkthrough
+    ├── 1_Discharge Kernel README.md         ← this file
+    ├── 2_myHET_7mN.md                       ← My_HET.jl walkthrough
+    └── 3_2D_axisymmetric_cross_section.md   ← extraction script walkthrough
 ```
 
 ---
