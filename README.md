@@ -163,6 +163,17 @@ Anode efficiency  : xx.x %
 
 ---
 
+## License & Contact
+
+This work is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) —
+you are free to use and adapt it for non-commercial purposes with attribution.
+
+If you use this code in your research or wish to build on it, please get in touch:
+
+📧 [prithvigiridhar@gmail.com]
+🔗 [www.linkedin.com/in/prithvigiridhar]
+
+---
 ## Citation
 
 If you use this code in your work, please cite:
