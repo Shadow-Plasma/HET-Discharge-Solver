@@ -21,4 +21,4 @@ Each documentation file mirrors the section structure of its script.
 Read the `.md` file alongside the `.jl` file to understand what each block does and why.
 
 For the correct **run order** of the scripts, see the
-[Code - Julia Suite README](01_discharge_kernal/Code - Julia Suite).
+[Code - Julia Suite README]([01_discharge_kernal/Code - Julia Suite](https://github.com/Shadow-Plasma/HET-Discharge-Solver/blob/93fd46e37863e9ca85d6524ceab90f6cf96a53e2/01_discharge_kernal/Code%20-%20Julia%20Suite/1_Code_Julia_Suite_README.md)).
