@@ -163,8 +163,28 @@ Anode efficiency  : xx.x %
 
 ---
 
-## Reference
+## Citation
 
-Magnusson, J. et al., *HallThruster.jl: A Julia package for Hall thruster discharge simulation*, AIAA 2022.
+If you use this code in your work, please cite:
 
-Goebel, D. M. & Katz, I. (2008). *Fundamentals of Electric Propulsion: Ion and Hall Thrusters*. JPL Space Science and Technology Series.
+**Associated publication:**
+> Prithvi Giridhar (2026). *Assessment of AIS Antenna Placement near Hall-Effect Thrusters
+> for Small Satellite Applications*. SMOPS 2026.
+
+**Core solver (HallThruster.jl):**
+
+```bibtex
+@article{Marks2023,
+  doi       = {10.21105/joss.04672},
+  url       = {https://doi.org/10.21105/joss.04672},
+  year      = {2023},
+  publisher = {The Open Journal},
+  volume    = {8}, number = {86}, pages = {4672},
+  author    = {Thomas Marks and Paul Schedler and Benjamin Jorns},
+  title     = {HallThruster.jl: a Julia package for 1D Hall thruster discharge simulation},
+  journal   = {Journal of Open Source Software}
+}
+```
+
+**Reference:**
+Goebel, D. M. & Katz, I. (2008). *Fundamentals of Electric Propulsion: Ion and Hall Thrusters*. JPL Space Science and Technology Series. Wiley.
