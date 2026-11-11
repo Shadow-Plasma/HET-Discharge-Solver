@@ -1,4 +1,4 @@
-# 01 — Discharge Kernel (1D Axial Solver)
+# 1 — Discharge Kernel (1D Axial Solver)
 
 Solves the 1D axial discharge channel physics using [HallThruster.jl](https://github.com/UM-PEPL/HallThruster.jl).
 Produces exit-plane plasma and neutral conditions that feed into the near-field plume solver (Step 2).
