@@ -1,4 +1,4 @@
-# MyHET_7mN — Hall Effect Thruster Simulation
+# My_HET.jl — Hall Effect Thruster Simulation
 
 A 1D Hall Effect Thruster simulation using [HallThruster.jl](https://github.com/UM-PEPL/HallThruster.jl), targeting a **7 mN thrust-class** xenon thruster at 300 V discharge.
 
