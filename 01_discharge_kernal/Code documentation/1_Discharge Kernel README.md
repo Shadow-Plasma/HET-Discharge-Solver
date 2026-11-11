@@ -1,42 +1,24 @@
-# 01 — Discharge Kernel (1D Axial Solver)
+# Code Documentation — 01 Discharge Kernel
 
-Solves the 1D axial discharge channel physics using [HallThruster.jl](https://github.com/UM-PEPL/HallThruster.jl).
-Produces exit-plane plasma and neutral conditions that feed into the near-field plume solver (Step 2).
-
-**Output at the thruster exit plane (as a function of radius):**
-- Ion current density
-- Ion energy distribution
-- Neutral density
+This folder contains the markdown documentation for each Julia script in the
+[Code - Julia Suite](../Code%20-%20Julia%20Suite/) folder.
+Each `.md` file is a full walkthrough of its corresponding `.jl` script.
 
 ---
 
-## Folder Structure
-
-```
-01_discharge_kernal/
-├── Code - Julia Suite/
-│   ├── 1_Code_Julia_Suite_README.md       ← usage and run order
-│   ├── My_HET.jl                          ← core simulation script
-│   └── 2D axisymmetric cross section.jl   ← data extraction for visualiser
-└── Code documentation/
-    ├── 1 Discharge Kernel README.md       ← this file
-    ├── myHET_7mN.md                       ← My_HET.jl walkthrough
-    └── 2D_axisymmetric_cross_section.md   ← extraction script walkthrough
-```
-
----
-
-## Code Documentation
+## Contents
 
 | File | Covers | Description |
 |---|---|---|
-| `myHET_7mN.md` | `My_HET.jl` | Full walkthrough — geometry, B-field, config, thrust sweep, plots, Excel export, design scaling reference |
-| `2D_axisymmetric_cross_section.md` | `2D axisymmetric cross section.jl` | Data extraction walkthrough — plasma profiles, viz_data bundle, operating conditions |
+| `myHET_7mN.md` | `My_HET.jl` | Full code walkthrough — geometry, B-field, Config, SimParams, thrust sweep, 4-panel plots, Excel export, and design scaling reference |
+| `2D_axisymmetric_cross_section.md` | `2D axisymmetric cross section.jl` | Data extraction walkthrough — reads plasma profiles from `sol_avg`, prints diagnostic summaries, and bundles all quantities into the `viz_data` named tuple for the downstream visualiser |
 
 ---
 
-## Dependencies
+## How to Use
 
-- [HallThruster.jl](https://github.com/UM-PEPL/HallThruster.jl) v0.23.2
-- Julia 1.12.6
-- Plots.jl, XLSX.jl, Printf, Statistics
+Each documentation file mirrors the section structure of its script.
+Read the `.md` file alongside the `.jl` file to understand what each block does and why.
+
+For the correct **run order** of the scripts, see the
+[Code - Julia Suite README](../Code%20-%20Julia%20Suite/README.md).
