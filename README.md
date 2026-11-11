@@ -170,6 +170,8 @@ If you use this code in your work, please cite:
 **Associated publication:**
 > Prithvi Giridhar (2026). *Assessment of AIS Antenna Placement near Hall-Effect Thrusters
 > for Small Satellite Applications*. SMOPS 2026.
+> 
+> 📄 Full paper and poster available in [`/Publication`](./Publication/)
 
 **Core solver (HallThruster.jl):**
 
