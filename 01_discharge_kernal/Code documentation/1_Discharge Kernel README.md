@@ -21,4 +21,4 @@ Each documentation file mirrors the section structure of its script.
 Read the `.md` file alongside the `.jl` file to understand what each block does and why.
 
 For the correct **run order** of the scripts, see the
-[Code - Julia Suite README](../Code%20-%20Julia%20Suite/README.md).
+[Code - Julia Suite README](01_discharge_kernal/Code - Julia Suite).
