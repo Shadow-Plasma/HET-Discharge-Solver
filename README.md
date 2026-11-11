@@ -1,4 +1,4 @@
-# Julia-HET — Hall Effect Thruster 1D Simulation
+# HET-Spacecraft-Interaction
 
 A Julia simulation harness for a custom-designed **7 mN Hall Effect Thruster (HET)**, built on [HallThruster.jl](https://github.com/UM-PEPL/HallThruster.jl) v0.23.2. The suite solves the 1D discharge-channel physics (ionisation rate, electron energy, ion density) and delivers exit-plane plasma profiles ready for downstream plume modelling.
 
