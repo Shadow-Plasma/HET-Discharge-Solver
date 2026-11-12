@@ -13,20 +13,6 @@ This repository covers **Step 1** of a five-step computational framework for HET
 | 4 | CEX ion trajectory integration | 🔜 |
 | 5 | End-of-life material erosion | 🔜 |
 
-
-## Further Work in "Discharge Kernel — 1D Axial Solver"
-
-| # | Study | What it involves | Why it matters |
-|---|-------|-----------------|----------------|
-| 1 | Operating envelope mapping | Add a voltage sweep (200–600 V) combined with the existing mass-flow sweep into a 2D performance grid | Standard characterisation output for any thruster paper; thrust, Isp, power, and efficiency as functions of both Vd and ṁ |
-| 2 | Breathing mode analysis | FFT of the raw `sol` time series (`Id(t)`, `ji(t)`) to extract oscillation frequency and amplitude | Breathing mode (~10–30 kHz) modulates ion energy periodically, directly relevant to plume interaction |
-| 3 | Anomalous transport sensitivity | Sweep `TwoZoneBohm(α₁, α₂)` coefficients and plot thrust, Isp, Te_exit, and plume angle response | Largest source of model uncertainty in HET simulation; rigorous Uncertainty Quantification (UQ) is what EP labs look for |
-| 4 | Magnetic field topology study | Vary B-peak location (70–95% of L_ch) and Gaussian width σ parametrically | Shows how the ionisation zone moves and acceleration sharpens, non-trivial physics beyond parameter running |
-| 5 | Propellant comparison | Run the same geometry on Kr vs Xe (HallThruster.jl supports both) | Kr is actively replacing Xe in small satellite HETs due to cost and availability, directly industry-relevant |
-| 6 | Geometry scaling study | Scale geometry across 1–20 mN (keeping w/R_mean and L/w constant) and track efficiency, Isp, and power density | Demonstrates understanding of thruster scaling physics useful for design space exploration |
-| 7 | Wall loss quantification | Extract radial ion loss flux to channel walls vs axial position as a function of Vd and B-field | Natural bridge to Step 5 (erosion), connects discharge physics to end-of-life behaviour |
-
-
 ---
 
 ## Repository Structure
