@@ -10,10 +10,11 @@ Each `.md` file is a full walkthrough of its corresponding `.jl` script.
 
 | # | File | Covers | Description |
 |---|---|---|---|
-| 2 | `2_myHET_7mN.md` | `My_HET.jl` | Full code walkthrough — geometry, B-field, Config, SimParams, thrust sweep, 4-panel plots, Excel export, and design scaling reference |
-| 3 | `3_2D_axisymmetric_cross_section.md` | `2D axisymmetric cross section.jl` | Data extraction walkthrough — reads plasma profiles from `sol_avg`, prints diagnostic summaries, and bundles all quantities into the `viz_data` named tuple for the downstream visualiser |
-| 4 | `4_Visualise_thruster_2d.md` | `Visualise thruster 2d.jl` | 8-panel 2D visualiser walkthrough — zone shading, plume divergence angles, geometry schematic, panel-by-panel breakdown |
-| 5 | `5_Derived_Quantities.md` | `Derived_Quantities.jl` | Derived plasma physics walkthrough — E-field, ion velocity, Hall parameter, E×B drift, ionisation source, Excel export |
+| 0 | `0_ConfigV3.md` | `0_ConfigV3.jl` | Automated CONFIG generator — Nelder-Mead + bisection search for optimal (Vd, mdot, geometry). Run standalone before the main pipeline. |
+| 2 | `2_myHET_7mN.md` | `2_My_HET.jl` | Full code walkthrough — geometry, B-field, Config, SimParams, thrust sweep, 4-panel plots, Excel export, and design scaling reference |
+| 3 | `3_2D_axisymmetric_cross_section.md` | `3_2D axisymmetric cross section.jl` | Data extraction walkthrough — reads plasma profiles from `sol_avg`, prints diagnostic summaries, and bundles all quantities into the `viz_data` named tuple for the downstream visualiser |
+| 4 | `4_Visualise_thruster_2d.md` | `4_Visualise thruster 2d.jl` | 8-panel 2D visualiser walkthrough — zone shading, plume divergence angles, geometry schematic, panel-by-panel breakdown |
+| 5 | `5_Derived_Quantities.md` | `5_Derived_Quantities.jl` | Derived plasma physics walkthrough — E-field, ion velocity, Hall parameter, E×B drift, ionisation source, Excel export |
 
 ---
 
