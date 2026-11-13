@@ -23,5 +23,3 @@ Each `.md` file is a full walkthrough of its corresponding `.jl` script.
 Each documentation file mirrors the section structure of its corresponding script.
 Read the `.md` file alongside the `.jl` file to understand what each block does and why.
 
-For the correct **run order** of the scripts, see the
-[Code - Julia Suite README](../Code%20-%20Julia%20Suite/1_Code_Julia_Suite_README.md).
