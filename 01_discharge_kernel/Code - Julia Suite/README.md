@@ -10,10 +10,10 @@ Run these in order in a single REPL session — each script reads variables left
 | # | File | Description |
 |---|---|---|
 | 0 | `0_ConfigV3.jl` | Automated CONFIG generator — given T and Isp targets, finds optimal (Vd, mdot) and geometry via Nelder-Mead + bisection. Run standalone before the main pipeline. |
-| 2 | `2_My_HET.jl` | Core simulation — geometry, B-field, Config, SimParams, baseline run, thrust sweep, 4-panel plots, Excel export |
-| 3 | `3_2D axisymmetric cross section.jl` | Extracts and bundles plasma profile data into a clean `viz_data` named tuple for downstream visualisation |
-| 4 | `4_Visualise thruster 2d.jl` | 8-panel 2D axisymmetric visualiser — zone shading, plume divergence cones, geometry schematic |
-| 5 | `5_Derived_Quantities.jl` | Derived plasma physics — E-field, ion velocity, Hall parameter, E×B drift, ionisation source + Excel export |
+| 1 | `2_My_HET.jl` | Core simulation — geometry, B-field, Config, SimParams, baseline run, thrust sweep, 4-panel plots, Excel export |
+| 2 | `3_2D axisymmetric cross section.jl` | Extracts and bundles plasma profile data into a clean `viz_data` named tuple for downstream visualisation |
+| 3 | `4_Visualise thruster 2d.jl` | 8-panel 2D axisymmetric visualiser — zone shading, plume divergence cones, geometry schematic |
+| 4 | `5_Derived_Quantities.jl` | Derived plasma physics — E-field, ion velocity, Hall parameter, E×B drift, ionisation source + Excel export |
 
 ---
 
@@ -29,13 +29,13 @@ julia> include("0_ConfigV3.jl")
 
 > `0_ConfigV3.jl` runs independently — it does **not** need the other scripts in scope.
 
-### Steps 2–5 — Main pipeline (same REPL session, in order)
+### Steps 1–4 — Main pipeline (same REPL session, in order)
 
 ```julia
-julia> include("2_My_HET.jl")
-julia> include("3_2D axisymmetric cross section.jl")
-julia> include("4_Visualise thruster 2d.jl")
-julia> include("5_Derived_Quantities.jl")
+julia> include("1_My_HET.jl")
+julia> include("2_2D axisymmetric cross section.jl")
+julia> include("3_Visualise thruster 2d.jl")
+julia> include("4_Derived_Quantities.jl")
 ```
 
 > **Important:** Scripts 3–5 must be run in the same REPL session as script 2.
@@ -45,7 +45,7 @@ julia> include("5_Derived_Quantities.jl")
 
 ## Expected Console Output
 
-**`2_My_HET.jl`:**
+**`1_My_HET.jl`:**
 
 ```
 Running simulation...
@@ -57,7 +57,7 @@ Isp               : xxxx s
 Anode efficiency  : xx.x %
 ```
 
-**`3_2D axisymmetric cross section.jl`:**
+**`2_2D axisymmetric cross section.jl`:**
 
 ```
 ── Geometry ──────────────────────────────
@@ -68,7 +68,7 @@ Anode efficiency  : xx.x %
 Data extraction complete. Ready for visualizer.
 ```
 
-**`4_Visualise thruster 2d.jl`:**
+**`3_Visualise thruster 2d.jl`:**
 
 ```
 Zone boundaries (auto-derived from geometry):
