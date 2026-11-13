@@ -18,18 +18,18 @@ Produces exit-plane plasma and neutral conditions that feed into the near-field 
 01_discharge_kernal/
 ├── Code - Julia Suite/
 |   ├── 0_ConfigV3.jl                             ← Automated config generator
-│   ├── 1_Code_Julia_Suite_README.md              ← usage and run order
-│   ├── 2_My_HET.jl                               ← core simulation script
-│   ├── 3_2D axisymmetric cross section.jl        ← data extraction for visualiser
-│   ├── 4_Visualise thruster 2d.jl                ← 2D axisymmetric visualiser
-│   └── 5_Derived_Quantities.jl                   ← derived plasma physics + Excel export
+│   ├── 1_My_HET.jl                               ← core simulation script
+│   ├── 2_2D axisymmetric cross section.jl        ← data extraction for visualiser
+│   ├── 3_Visualise thruster 2d.jl                ← 2D axisymmetric visualiser
+│   ├── 4_Derived_Quantities.jl                   ← derived plasma physics + Excel export
+|   └── README.md                                 ← usage and run order
 └── Code documentation/
     ├── 0_ConfigV3.md                             ← Automated config generator
-    ├── 1_Discharge Kernel README.md              ← this file
-    ├── 2_myHET_7mN.md                            ← My_HET.jl walkthrough
-    ├── 3_2D_axisymmetric_cross_section.md        ← extraction script walkthrough
-    ├── 4_Visualise_thruster_2d.md                ← 2D visualiser walkthrough
-    └── 5_Derived_Quantities.md                   ← derived quantities walkthrough
+    ├── 1_myHET_7mN.md                            ← My_HET.jl walkthrough
+    ├── 2_2D_axisymmetric_cross_section.md        ← extraction script walkthrough
+    ├── 3_Visualise_thruster_2d.md                ← 2D visualiser walkthrough
+    ├── 4_Derived_Quantities.md                   ← derived quantities walkthrough
+    └── README.md                                 ← this file
 ```
 
 ---
